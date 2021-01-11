@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.RssReader" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorSecondary</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+    </style>
+
+    <style name="ThemeOverlay.RssReader.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+
+    <style name="ThemeOverlay.RssReader.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+
+    <style name="Widget.RssReader.HabrRoundButton" parent="">
+        <item name="android:minHeight">50dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="cardBackgroundColor">@android:color/transparent</item>
+        <item name="cardCornerRadius">10dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeColor">@color/colorSecondary</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+</resources>

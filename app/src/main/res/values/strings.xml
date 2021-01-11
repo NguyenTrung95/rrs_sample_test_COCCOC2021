@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">CocCoc RSS</string>
+
+    <string name="fragment_label_feeds">vnexpress.net</string>
+    <string name="fragment_label_detailed_post">Chi tiết</string>
+    <string name="fragment_label_webview">Nội dung</string>
+
+    <string name="feed_type_best_daily">Tin mới nhất</string>
+
+    <string name="read_more">Read more</string>
+    <string name="open_this_feed_in_the_browser">Open this feed in the browser</string>
+    <string name="refresh">Refresh</string>
+    <string name="posts_not_found">Posts not found!\nCheck your network connection.</string>
+    <string name="failed_to_load_new_posts">Failed to load new posts</string>
+</resources>

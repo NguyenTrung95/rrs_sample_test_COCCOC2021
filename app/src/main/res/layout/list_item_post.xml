@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="post"
+            type="com.coccoc.rssreader.model.HabrPost" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/padding_small">
+
+            <TextView
+                android:id="@+id/creator_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_medium"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:text="@{post.getDate}"
+                android:textColor="@color/colorSecondary"
+                tools:text="Author" />
+
+            <TextView
+                android:id="@+id/date_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_medium"
+                android:layout_marginBottom="@dimen/margin_small"
+                app:pubDate="@{post}"
+                tools:text="2 hours ago" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium_large"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/tittle_text"
+            android:textSize="20sp"
+            app:postTitle="@{post}"
+            tools:text="AAAAAAAAAAAA!" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.05"
+            android:background="@color/colorPrimary" />
+    </LinearLayout>
+</layout>
